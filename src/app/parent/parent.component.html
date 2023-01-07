@@ -1,0 +1,3 @@
+<p>parent works!</p>
+----------------{{passDataFromParent.name | uppercase}}---------------{{passDataFromParent.age}}------------
+<app-child (childToParent)="receivedData($event)" [getDataFromParent]="person"></app-child>

@@ -1,0 +1,23 @@
+<p>firstfvdfffgvfgtr works!</p>
+{{ajith + 2}}
+
+<div *ngIf="list.length > 0"> The list is:</div>
+<div *ngFor="let data of list" >
+    <div *ngIf="isCheck" [style.color]="fontcolor">
+        {{data}}
+    </div>
+</div>
+<br>
+<button  (click)="clickfunction()">
+click
+</button>
+
+<button (click)="changecolor('red')">red</button>
+<button (click)="changecolor('green')">green</button>
+<br>
+-----------------------------
+<br>
+<div *ngFor="let data of getDataFromService">
+    {{data.API}} || {{data.Description}} || {{data.Auth}} || {{data.HTTPS}} || {{data.Cors}} || {{data.link}} || {{data.Category}}
+    <br>-----------------------
+</div>
